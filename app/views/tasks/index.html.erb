@@ -1,0 +1,6 @@
+<h1>TASK MANAGER</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li> <%= task.completed ? "X" : "0" %><%= link_to task.title, task_path(task.id) %></li>
+  <% end %>
+</ul>
